@@ -1,6 +1,7 @@
 <?php
 namespace Sichikawa\LaravelSendgridLogDriver\Transport;
 
+use GuzzleHttp\Client;
 use Psr\Log\LoggerInterface;
 use Sichikawa\LaravelSendgridDriver\Transport\SendgridV3Transport;
 use Swift_Mime_Message;
@@ -16,6 +17,7 @@ class SendgridLogTransport extends SendgridV3Transport
 
     public function __construct(LoggerInterface $logger, $api_key)
     {
+        parent::__construct(new Client(), $api_key, true);
         $this->logger = $logger;
         $this->options = [
             'headers' => [
