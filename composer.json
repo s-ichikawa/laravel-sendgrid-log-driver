@@ -3,7 +3,8 @@
   "description": "This library adds a 'sendgrid-log' mail driver to Laravel.",
   "license": "MIT",
   "require": {
-    "illuminate/mail": "~5.1"
+    "illuminate/mail": "~5.1",
+    "s-ichikawa/laravel-sendgrid-driver": "^1.1"
   },
   "require-dev": {
     "illuminate/container": "~5.1.0",
