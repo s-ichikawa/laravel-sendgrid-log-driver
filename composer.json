@@ -4,7 +4,7 @@
   "license": "MIT",
   "require": {
     "illuminate/mail": "~5.1",
-    "s-ichikawa/laravel-sendgrid-driver": "^1.1"
+    "s-ichikawa/laravel-sendgrid-driver": "dev-master"
   },
   "require-dev": {
     "illuminate/container": "~5.1.0",
